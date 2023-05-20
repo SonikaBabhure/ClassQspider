@@ -4,3 +4,4 @@ git add .(it will add all the files)
 git add filename (it will add specific file)
 git commit -m "adding new file"
 git push origin main
+git checkout -b branch_name
