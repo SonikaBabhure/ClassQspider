@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.parent{
+    margin: 0 auto;
+    height: 302px;
+    width: 302px;
+    border: 1px solid;
+    background-color: yellow;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+}
+#parent1{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: start;
+}
+#parent2{
+    display: flex;
+    flex-flow:row wrap ;
+    align-content: start;
+}
+#parent3{
+    display: flex;
+    flex-flow:row wrap;
+    align-content: end;
+}
+#parent4{
+   display: flex;
+   flex-flow: row wrap;
+   align-content: space-around;
+}
+#parent5{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+}
+#parent6{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+}
+.box{
+            height: 50px;
+            width: 50px;
+            border: 1px solid;
+            line-height: 50px;
+            color:yellow;
+            text-align: center;
+            background-color: blue;
+}
+    </style>
+</head>
+<body>
+    <h1>1.align-content:start/flex-start/left</h1>
+    <div id="parent1" class="parent">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">BOX4</div>
+        <div class="box" id="box5">BOX5</div>
+        <div class="box" id="box6">BOX6</div>
+        <div class="box" id="box7">box7</div>
+        <div class="box" id="box8">BOX8</div>
+        <div class="box" id="box9">BOX9</div>
+        <div class="box" id="box10">BOX10</div>
+    </div> 
+    <h1>2. align-content:center;</h1>
+    <div id="parent2" class="parent">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">BOX4</div>
+        <div class="box" id="box5">BOX5</div>
+        <div class="box" id="box6">BOX6</div>
+        <div class="box" id="box7">box7</div>
+        <div class="box" id="box8">BOX8</div>
+        <div class="box" id="box9">BOX9</div>
+        <div class="box" id="box10">BOX10</div>
+    </div> 
+    <h1>3. align-content:end/flex-end/right</h1>
+    <div id="parent3" class="parent">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">BOX4</div>
+        <div class="box" id="box5">BOX5</div>
+        <div class="box" id="box6">BOX6</div>
+        <div class="box" id="box7">box7</div>
+        <div class="box" id="box8">BOX8</div>
+        <div class="box" id="box9">BOX9</div>
+        <div class="box" id="box10">BOX10</div>
+    </div> 
+    <h1>4. align-content:space-around;</h1>
+    <div id="parent4" class="parent">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">BOX4</div>
+        <div class="box" id="box5">BOX5</div>
+        <div class="box" id="box6">BOX6</div>
+        <div class="box" id="box7">box7</div>
+        <div class="box" id="box8">BOX8</div>
+        <div class="box" id="box9">BOX9</div>
+        <div class="box" id="box10">BOX10</div>
+    </div> 
+    <h1>5.align-content:space-evenly;</h1>
+    <div id="parent4" class="parent">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">BOX4</div>
+        <div class="box" id="box5">BOX5</div>
+        <div class="box" id="box6">BOX6</div>
+        <div class="box" id="box7">box7</div>
+        <div class="box" id="box8">BOX8</div>
+        <div class="box" id="box9">BOX9</div>
+        <div class="box" id="box10">BOX10</div>
+    </div> 
+    <h1>6.align-content:space-between;</h1>
+    <div id="parent4" class="parent">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">BOX4</div>
+        <div class="box" id="box5">BOX5</div>
+        <div class="box" id="box6">BOX6</div>
+        <div class="box" id="box7">box7</div>
+        <div class="box" id="box8">BOX8</div>
+        <div class="box" id="box9">BOX9</div>
+        <div class="box" id="box10">BOX10</div>
+    </div> 
+</body>
+</html>
