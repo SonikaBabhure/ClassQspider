@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // implicitly
+        console.log(5+5);
+        console.log(5-'a');
+        console.log(true-1);
+
+
+    //    explicitaly
+        let a=((true)?Boolean(null):"bye")+10;
+        console.log(a);
+
+        //explicite typecast
+        console.log();(Number("55")+10);//5510
+        console.log(Boolean("10")+2);
+        console.log(Boolean(10)+2);
+        console.log(String(55)+55);//5555
+        console.log(Boolean('a')-10);//-9
+        console.log(Number(false)+Number("hello"));NaN
+        console.log(String(true)+10);true10
+        console.log(Number(null)+10); //10
+        console.log(String(null)+null);//nullnull
+        console.log(true+Number("10")); //11
+    </script>
+</body>
+</html>

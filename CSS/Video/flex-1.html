@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            height: 3000px;
+            weight:100%;
+            border: 1px solid;
+            display: flex;
+
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        
+        }
+        .parent{
+            height: 600px;
+            weight: 600px;
+            border: 1px solid;
+            
+        }
+        .box{
+            height: 100px;
+            weight:100px;
+            border: 1px solid;
+        }
+        #parent1{
+            display: flex;
+            justify-content: start;
+        }
+        #parent2{
+             display: flex;
+             justify-content: center;
+        }
+        #parent3{
+            display: flex;
+            justify-content: space-around;
+        }
+        #parent4{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+   <div id="main">
+    <h1>Constainer 1</h1>
+    <div class="box" id="parent1">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box" id="box2">BOX2</div>
+        <div class="box" id="box3">BOX3</div>
+        <div class="box" id="box4">BOX4</div>
+    </div>
+<h1>Container 2</h1>
+<div class="parent" id="parents2">
+    <div class="parent" id="parent2"></div>
+    <div class="box" id="box1">BOX1</div>
+    <div class="box" id="box2">BOX2</div>
+    <div class="box" id="box3">BOX3</div>
+    <div class="box" id="box4">BOX4</div>
+</div>
+<h1>Container 3</h1>
+<div class="parent" id="parents2">
+    <div class="parent" id="parent2"></div>
+    <div class="box" id="box1">BOX1</div>
+    <div class="box" id="box2">BOX2</div>
+    <div class="box" id="box3">BOX3</div>
+    <div class="box" id="box4">BOX4</div>
+</div>
+<h1>Container 4</h1>
+<div class="parent" id="parents2">
+    <div class="parent" id="parent2"></div>
+    <div class="box" id="box1">BOX1</div>
+    <div class="box" id="box2">BOX2</div>
+    <div class="box" id="box3">BOX3</div>
+    <div class="box" id="box4">BOX4</div>
+</div>
+
+
+   </div> 
+</body>
+</html>

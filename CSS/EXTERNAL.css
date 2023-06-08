@@ -1,0 +1,12 @@
+h3{
+    background-color: coral;
+    color: darkgreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1{
+    background-color: brown;
+    color: cornflowerblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-stretch: semi-condensed;
+}

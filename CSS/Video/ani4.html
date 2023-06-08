@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle{
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+
+
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 50%;
+            animation-name: colors;
+            animation-timing-function: linear;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            position: relative;
+
+        }
+        @keyframes colors{
+            13%{
+                background-color: orange;
+                top: -100px;
+            }
+            26%{
+                background-color: yellow;
+                top: 1800px;
+            }
+            39%{
+                background-color: blueviolet;
+                top: -100px;
+            }
+            54%{
+                background-color: green;
+                top: -1800px;
+            }
+            69%{
+                background-color: blue;
+                top: -100;
+            }
+            91%{
+                background-color: indigo;
+                top: 1800px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+   <div id="circle"></div> 
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            display: grid;
+            grid-template-rows: 140px 200px 100px;
+            /* grid-template-columns: auto auto auto; */
+            gap: 10px;
+            background-color: aqua;
+            /* height: 400px;
+            width: 400px; */
+        }
+        .items{
+            padding: 10px;
+            background-color: yellow;
+        }
+        #items1{
+            display: grid;
+            grid-template-areas: 'block1 block2 block3' ;
+            gap: 10px;
+        }
+        .block{
+            padding: 10px;
+            background-color: red;
+            text-align: center;
+            height: 50px;
+            width: 100px;
+
+        }
+        #block1{
+            grid-area: block1;
+        }
+        #block2{
+            grid-area: block2;
+        }
+        #block3{
+            grid-area: block3;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="items 1" id="items1">
+            <div class="block" id="block1">Block1</div>
+            <div class="block" id="block2">Block2</div>
+            <div class="block" id="block3">Block3</div>
+        </div>
+        <div class="items" id="items2">2</div>
+        <div class="items" id="items3">3</div>
+        <div class="items" id="items4">4</div>
+        <div class="items" id="items5">5</div>
+        <div class="items" id="items6">6</div>
+        <div class="items" id="items7">7</div>
+        <div class="items" id="items8">8</div>
+        <div class="items" id="items9">9</div>
+    </div>
+</body>
+</html>

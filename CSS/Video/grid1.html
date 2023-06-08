@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            display: grid;
+            grid-template-areas: 'block1 block2 block3'
+                                  'block1 block4 block4'
+                                  'block5 block6 block6';
+                                  background-color: dodgerblue;
+                                  padding: 10px;
+                                  gap: 10px;
+                                  height: 600px;
+                                  width: 600px;
+        }
+        .block{
+            padding: 10px;
+            background-color:rgba(255, 255,255, 0.9) ;
+            text-align: center;
+            line-height: 70px;
+            font-size: 30px;
+        }
+        #block1{
+            grid-area: block1;
+        }
+        #block2{
+            grid-area: block2;
+        }
+        #block3{
+            grid-area: block3;
+        }
+        #block4{
+            grid-area: block4;
+        }
+        #block5{
+            grid-area: block5;
+        }
+        #block6{
+            grid-area: block6;
+        }
+    </style>
+</head>
+<body>
+   <div id="parent">
+    <div class="block" id="block1">Block1</div>
+    <div class="block" id="block2">Block2</div>
+    <div class="block" id="block3">Block3</div>
+    <div class="block" id="block4">Block4</div>
+    <div class="block" id="block5">Block5</div>
+    <div class="block" id="block6">Block6</div>
+   </div>
+</body>
+</html>

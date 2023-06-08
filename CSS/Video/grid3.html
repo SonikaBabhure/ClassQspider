@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            display: grid;
+            grid-template-areas: 'block1 block1 block1 block1'm
+                                 'block2 block2 block3 block4'
+                                 'block5 block6 block7 block7';
+            background-color: yellow;
+            padding: 10px;
+            gap: 10px;
+            height: 800px;
+            width: 1000%;
+
+        }
+        .block{
+            background-color: rgba(255,0, 0, 0.6);
+            text-align: center;
+            font-size: 40px;
+        }
+        #block1{
+            grid-area: block1;
+            display: grid;
+            grid-template-areas: 'child1 child2 child3';
+            justify-content: end;
+            align-items: center;
+            /* margin-left: 10px; */
+            column-gap: 10px;
+
+        }
+        .child{
+            padding: 10px;
+            background-color: aqua;
+             color: white;
+            height: 60px;
+            width: 100px;
+        }
+        #child1{
+             grid-area: child1;
+            
+        }
+        #child2{
+             grid-area: child2;
+        }
+        #child3{
+             grid-area: child3;
+        }
+        #block2{
+            grid-area: block2;
+        }
+        #block3{
+            grid-area: block3;
+        }
+        #block4{
+            grid-area: block4;
+        }
+        #block5{
+            grid-area: block5;
+        }
+        #block6{
+            grid-area: block6;
+        }
+        #block7{
+            grid-area: block7;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="block" id="block1">
+            <div id="child1" class="child">Child 1</div>
+            <div id="child2" class="child">child 2</div>
+            <div id="child3" class="child">Child 3</div>
+        </div>
+        <div class="block" id="block2">Block2</div>
+        <div class="block" id="block3">Block3</div>
+        <div class="block" id="block4">Block4</div>
+        <div class="block" id="block5">Block5</div>
+        <div class="block" id="block6">Block6</div>
+        <div class="block" id="block7">Block7</div>
+    </div>
+
+</body>
+</html>
